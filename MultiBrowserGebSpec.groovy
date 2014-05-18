@@ -37,7 +37,7 @@ abstract class MultiBrowserGebSpec extends Specification {
 			if (browser.config?.autoClearCookies) {
 				browser.clearCookiesQuietly()
 			}
-			browser.close()
+			browser.quit()
 		}
 		_browsers = createBrowserMap()
 	}
